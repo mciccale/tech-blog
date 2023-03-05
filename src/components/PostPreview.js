@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 const PostPreview = ({ post }) => {
   return (
     <div>
-      <h2>{post.name}</h2>
-      <p>{post.content}</p>
+      <h2>{post.title}</h2>
+      <p>{post.description}</p>
     </div>
   )
 }

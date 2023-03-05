@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "title",
+      "description": "a brief description of the post",
+      "body": "body of the post",
+      "author": "name-surname",
+      "date": "12-3-2023"
+    },
+    {
+      "id": 2,
+      "title": "title",
+      "description": "a brief description of the post",
+      "body": "body of the post",
+      "author": "name-surname",
+      "date": "12-3-2023"
+    },
+    {
+      "id": 3,
+      "title": "title",
+      "description": "a brief description of the post",
+      "body": "body of the post",
+      "author": "name-surname",
+      "date": "12-3-2023"
+    },
+    {
+      "id": 4,
+      "title": "title",
+      "description": "a brief description of the post",
+      "body": "body of the post",
+      "author": "name-surname",
+      "date": "12-3-2023"
+    },
+    {
+      "id": 5,
+      "title": "title",
+      "description": "a brief description of the post",
+      "body": "body of the post",
+      "author": "name-surname",
+      "date": "12-3-2023"
+    },
+    {
+      "id": 6,
+      "title": "title",
+      "description": "a brief description of the post",
+      "body": "body of the post",
+      "author": "name-surname",
+      "date": "12-3-2023"
+    }
+  ]
+}

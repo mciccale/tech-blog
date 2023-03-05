@@ -1,16 +1,22 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import PostPreview from './PostPreview'
 
 const Content = () => {
-  const [posts, setPosts] = useState([
-    {id: 1, name: 'Post1', content: 'Este es el post1'},
-    {id: 2, name: 'Post2', content: 'Este es el post1'},
-    {id: 3, name: 'Post3', content: 'Este es el post3'}
-  ])
-  
+  const [posts, setPosts] = useState([])
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch('http://localhost:3001/posts')
+      const json = await response.json()
+      setPosts(json)
+    }
+    fetchData().catch(console.error)
+  }, [])
+
   return (
     <div>
-      {posts.map(post => <PostPreview key={post.id} post={post}/>)}
+      {posts.map(post => (
+        <PostPreview key={post.id} post={post} />
+      ))}
     </div>
   )
 }
